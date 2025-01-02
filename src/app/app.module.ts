@@ -12,6 +12,13 @@ import { CyberSecurityComponent } from './pages/cyber-security/cyber-security.co
 import { SoftwareComponent } from './pages/software/software.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { UiUxComponent } from './pages/ui-ux/ui-ux.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { AchievementCardsComponent } from './components/achievement-cards/achievement-cards.component';
+import { ProjectCardsComponent } from './components/project-cards/project-cards.component';
+import { FaqComponent } from './components/faq/faq.component';
+import { StaticCardComponent } from './components/static-card/static-card.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +30,14 @@ import { UiUxComponent } from './pages/ui-ux/ui-ux.component';
     CyberSecurityComponent,
     SoftwareComponent,
     ContactUsComponent,
-    UiUxComponent
+    UiUxComponent,
+    HeaderComponent,
+    FooterComponent,
+    ContactFormComponent,
+    AchievementCardsComponent,
+    ProjectCardsComponent,
+    FaqComponent,
+    StaticCardComponent
   ],
   imports: [
     BrowserModule,
