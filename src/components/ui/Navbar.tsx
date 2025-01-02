@@ -51,7 +51,7 @@ export default function CustomNavbar() {
               pathname === "/services" ? "text-pink-600 font-bold" : "text-gray-900"
             } hover:bg-gray-100 md:hover:bg-transparent md:hover:text-pink-600 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent`}
           >
-            Services
+            Service
           </NavbarLink>
         </Link>
         <Link href="/web" passHref legacyBehavior>
