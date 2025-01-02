@@ -1,0 +1,73 @@
+/* .container {
+    max-width: 960px;
+  }
+   */
+   .product-device {
+    position: absolute;
+    right: 5%;
+    bottom: -10%;
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    transform: rotate(20deg);
+    background-image: url("./assets/img/Walkthrough\ -\ Light.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+  }
+  
+  .product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
+  }
+  
+  .product-device-2 {
+    top: -10%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
+    transform: rotate(200deg);
+    /* background-image: url("./assets/img//Verification\ -\ Light.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat; */
+  }
+  
+  .header-section {
+    background: rgb(63,94,251) !important;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%) !important;
+  }
+
+  .flex-equal > * {
+    flex: 1;
+  }
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      flex: 1;
+    }
+  }
+  @media (max-width: 768px) {
+    .app-images {
+        width: 50vw !important;
+        height: 90vh !important;
+    }
+  }
+  @media (max-width: 425px) {
+    .app-images {
+        width: 50vw !important;
+        height: 60vh !important;
+    }
+  }
+  .app-images {
+    width: 20vw;
+    height: 75vh;
+    border: 3px solid black;
+    border-radius: 20px;
+  }
