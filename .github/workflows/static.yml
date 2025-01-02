@@ -42,7 +42,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular app
-        run: ng build -- --output-path=dist
+        run: ng build
 
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v3
