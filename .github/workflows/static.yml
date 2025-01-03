@@ -43,7 +43,7 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist/index.html'
+          path: './dist/avira-tech-revamp'
 
       - name: Deploy to GitHub Pages
         id: deployment
