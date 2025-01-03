@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  
+  activeLink: string = 'Home'; // Default active link
 
+  setActiveLink(link: string): void {
+    this.activeLink = link;
+  }
 }
