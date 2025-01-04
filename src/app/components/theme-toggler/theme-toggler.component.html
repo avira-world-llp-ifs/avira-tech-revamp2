@@ -1,0 +1,31 @@
+<button
+  id="theme-toggle"
+  (click)="toggleTheme()"
+  class="p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600 mr-4 ml-4"
+>
+  <!-- Dark mode icon -->
+  <svg
+    id="theme-toggle-dark-icon"
+    *ngIf="!isDarkMode"
+    class="w-5 h-5"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+  >
+    <path
+      d="M17.293 13.293a1 1 0 00-1.414 0 7.028 7.028 0 11-9.9-9.9 1 1 0 000-1.414A9.028 9.028 0 1017.293 13.293z"
+    ></path>
+  </svg>
+
+  <!-- Light mode icon -->
+  <svg
+    id="theme-toggle-light-icon"
+    *ngIf="isDarkMode"
+    class="w-5 h-5"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+  >
+    <path
+      d="M10 2a8 8 0 100 16 8 8 0 000-16zm0-2a10 10 0 110 20 10 10 0 010-20z"
+    ></path>
+  </svg>
+</button>
