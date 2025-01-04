@@ -9,9 +9,11 @@ import { ThemeToggleComponent } from "../theme-toggler/theme-toggler.component";
 })
 export class HeaderComponent {
   
+
   // activeLink: string = 'Home'; // Default active link
 
   // setActiveLink(link: string): void {
   //   this.activeLink = link;
   // }
+
 }
