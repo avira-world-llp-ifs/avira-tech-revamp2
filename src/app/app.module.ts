@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,6 +19,9 @@ import { AchievementCardsComponent } from './components/achievement-cards/achiev
 import { ProjectCardsComponent } from './components/project-cards/project-cards.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { StaticCardComponent } from './components/static-card/static-card.component';
+import { CommonModule } from '@angular/common';
+import { ThemeToggleComponent } from './components/theme-toggler/theme-toggler.component';
+
 
 @NgModule({
   declarations: [
@@ -37,13 +40,19 @@ import { StaticCardComponent } from './components/static-card/static-card.compon
     AchievementCardsComponent,
     ProjectCardsComponent,
     FaqComponent,
-    StaticCardComponent
+    StaticCardComponent,
+    ThemeToggleComponent
+   
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+ 
 })
 export class AppModule { }
