@@ -22,6 +22,7 @@ import { StaticCardComponent } from './components/static-card/static-card.compon
 import { CommonModule } from '@angular/common';
 import { ThemeToggleComponent } from './components/theme-toggler/theme-toggler.component';
 import { CollaborationsComponent } from './collaborations/collaborations.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { CollaborationsComponent } from './collaborations/collaborations.compone
     FaqComponent,
     StaticCardComponent,
     ThemeToggleComponent,
-    CollaborationsComponent
+    CollaborationsComponent,
+    WelcomeComponent
    
     
   ],

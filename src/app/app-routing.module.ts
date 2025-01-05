@@ -9,6 +9,7 @@ import { SoftwareComponent } from './pages/software/software.component';
 import { UiUxComponent } from './pages/ui-ux/ui-ux.component';
 import { WebDevelopmentComponent } from './pages/web-development/web-development.component';
 import { CollaborationsComponent } from './collaborations/collaborations.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent},
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: "ui-ux", component: UiUxComponent},
   {path: "web-development", component: WebDevelopmentComponent},
   {path: "collaborations", component: CollaborationsComponent},
+  {path: "welcome", component: WelcomeComponent},
 ];
 
 @NgModule({
