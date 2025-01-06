@@ -22,6 +22,7 @@ import { StaticCardComponent } from './components/static-card/static-card.compon
 import { CommonModule } from '@angular/common';
 import { ThemeToggleComponent } from './components/theme-toggler/theme-toggler.component';
 import { GoalsComponent } from './components/goals/goals.component';
+import { GetintouchComponent } from './components/getintouch/getintouch.component';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { GoalsComponent } from './components/goals/goals.component';
     FaqComponent,
     StaticCardComponent,
     ThemeToggleComponent,
-    GoalsComponent
+    GoalsComponent,
+    GetintouchComponent
    
     
   ],
