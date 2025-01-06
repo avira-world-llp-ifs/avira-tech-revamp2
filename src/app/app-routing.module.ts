@@ -20,8 +20,7 @@ const routes: Routes = [
   {path: "software", component: SoftwareComponent},
   {path: "ui-ux", component: UiUxComponent},
   {path: "web-development", component: WebDevelopmentComponent},
-  {path: "faq", component: FaqComponent},
-  {path: "goals", component: GoalsComponent},
+  
 ];
 
 @NgModule({
