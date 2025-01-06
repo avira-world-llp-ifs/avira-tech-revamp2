@@ -9,6 +9,7 @@ import { SoftwareComponent } from './pages/software/software.component';
 import { UiUxComponent } from './pages/ui-ux/ui-ux.component';
 import { WebDevelopmentComponent } from './pages/web-development/web-development.component';
 import { FaqComponent } from './components/faq/faq.component';
+import { GoalsComponent } from './components/goals/goals.component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent},
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: "ui-ux", component: UiUxComponent},
   {path: "web-development", component: WebDevelopmentComponent},
   {path: "faq", component: FaqComponent},
+  {path: "goals", component: GoalsComponent},
 ];
 
 @NgModule({
