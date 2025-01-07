@@ -1,0 +1,35 @@
+// Accordion container styling
+.accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  // Accordion item initial state
+  .accordion-item {
+    opacity: 0;
+    transform: scale(0.9); // Slightly smaller initially
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    will-change: opacity, transform;
+  
+    &.visible {
+      opacity: 1;
+      transform: scale(1); // Scale back to normal
+    }
+  }
+  
+  // Accordion header hover effect
+  .accordion-header {
+    &:hover {
+      background-color: #f1f1f1; // Light background color on hover
+    }
+  }
+  
+  // Dark mode adjustment
+  .dark-mode {
+    .accordion-item {
+      background-color: #333;
+      color: white;
+    }
+  }
+  
