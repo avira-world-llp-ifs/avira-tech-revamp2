@@ -21,6 +21,7 @@ import { FaqComponent } from './components/faq/faq.component';
 import { StaticCardComponent } from './components/static-card/static-card.component';
 import { CommonModule } from '@angular/common';
 import { ThemeToggleComponent } from './components/theme-toggler/theme-toggler.component';
+import { WhoWeAreComponent } from './components/who-we-are/who-we-are.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { ThemeToggleComponent } from './components/theme-toggler/theme-toggler.c
     ProjectCardsComponent,
     FaqComponent,
     StaticCardComponent,
-    ThemeToggleComponent
+    ThemeToggleComponent,
+    WhoWeAreComponent
    
     
   ],
