@@ -10,10 +10,17 @@ import { ThemeToggleComponent } from "../theme-toggler/theme-toggler.component";
 export class HeaderComponent {
   
 
-  // activeLink: string = 'Home'; // Default active link
+  isMenuOpen: boolean = false; // Variable to track menu state
 
-  // setActiveLink(link: string): void {
-  //   this.activeLink = link;
-  // }
+  // Method to toggle the menu visibility
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
+  // Optional: You can track active link to style the active menu item
+  activeLink: string = '';
+
+  setActiveLink(link: string) {
+    this.activeLink = link;
+  }
 }

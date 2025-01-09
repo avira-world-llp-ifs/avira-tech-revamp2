@@ -189,5 +189,116 @@
     </div>
     
   </div>
-</nav>
+ -->
+ <div class="nav-container">
+  <nav class="bg-white dark:bg-gray-900  z-20 start-0 top-0 border-gray-200 dark:border-gray-600  shadow">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="../../../assets/logo.jpg" class="h-16" alt="Avira World" />
+        <!-- <span
+       class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+       >Avira World</span
+     > -->
+      </a>
+      <div class="flex xl:order-2 space-x-3 xl:space-x-0 rtl:space-x-reverse">
+         <app-theme-toggle class="hidden xl:block"></app-theme-toggle>
+        <button routerLink="/contact-us" type="button"
+          class="text-white bg-pink-700 hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-pink-800 xl:block hidden">
+          Contact Us
+        </button>
 
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full xl:flex xl:w-auto xl:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 xl:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 xl:space-x-8 rtl:space-x-reverse xl:flex-row xl:mt-0 xl:border-0 xl:bg-white dark:bg-gray-800 xl:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a routerLink="/" routerLinkActive="text-pink-700" [routerLinkActiveOptions]="{ exact: true }" [ngClass]="{
+           'text-pink-700': activeLink === 'Home',
+           'dark:text-pink-500': activeLink === 'Home',
+           'dark:hover:bg-gray-700': activeLink === 'Home'
+         }" (click)="setActiveLink('Home')"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 xl:hover:bg-transparent xl:hover:text-pink-700 xl:p-0 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white xl:dark:hover:bg-transparent dark:border-gray-700"
+              aria-current="page">
+              Home
+            </a>
+          </li>
+          <li>
+            <a routerLink="/services" routerLinkActive="text-pink-700" [ngClass]="{
+             'text-pink-700': activeLink === 'Services',
+             'dark:text-pink-500': activeLink === 'Services',
+             'dark:hover:bg-gray-700': activeLink === 'Services'
+           }" (click)="setActiveLink('Services')"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 xl:hover:bg-transparent xl:hover:text-pink-700 xl:p-0 xl:dark:hover:text-pink-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white xl:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+          </li>
+          <li>
+            <a routerLink="/web-development" routerLinkActive="text-pink-700" [ngClass]="{
+             'text-pink-700': activeLink === 'web-development',
+             'dark:text-pink-500': activeLink === 'web-development',
+             'dark:hover:bg-gray-700': activeLink === 'web-development'
+           }" (click)="setActiveLink('web-development')"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 xl:hover:bg-transparent xl:hover:text-pink-700 xl:p-0 xl:dark:hover:text-pink-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white xl:dark:hover:bg-transparent dark:border-gray-700">Web
+              Development</a>
+          </li>
+          <li>
+            <a routerLink="/android-development" routerLinkActive="text-pink-700" [ngClass]="{
+             'text-pink-700': activeLink === 'android-development',
+             'dark:text-pink-500': activeLink === 'android-development',
+             'dark:hover:bg-gray-700': activeLink === 'android-development'
+           }" (click)="setActiveLink('android-development')"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 xl:hover:bg-transparent xl:hover:text-pink-700 xl:p-0 xl:dark:hover:text-pink-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white xl:dark:hover:bg-transparent dark:border-gray-700">Android
+              Development</a>
+          </li>
+          <li>
+            <a routerLink="/ui-ux" routerLinkActive="text-pink-700" [ngClass]="{
+             'text-pink-700': activeLink === 'ui-ux',
+             'dark:text-pink-500': activeLink === 'ui-ux',
+             'dark:hover:bg-gray-700': activeLink === 'ui-ux'
+           }" (click)="setActiveLink('ui-ux')"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 xl:hover:bg-transparent xl:hover:text-pink-700 xl:p-0 xl:dark:hover:text-pink-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white xl:dark:hover:bg-transparent dark:border-gray-700">UI/UX</a>
+          </li>
+          <li>
+            <a routerLink="/cyber-security" routerLinkActive="text-pink-700" [ngClass]="{
+             'text-pink-700': activeLink === 'cyber-security',
+             'dark:text-pink-500': activeLink === 'cyber-security',
+             'dark:hover:bg-gray-700': activeLink === 'cyber-security'
+           }" (click)="setActiveLink('cyber-security')"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 xl:hover:bg-transparent xl:hover:text-pink-700 xl:p-0 xl:dark:hover:text-pink-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white xl:dark:hover:bg-transparent dark:border-gray-700">Cyber
+              Security</a>
+          </li>
+          <li>
+            <a routerLink="/software" routerLinkActive="text-pink-700" [ngClass]="{
+             'text-pink-700': activeLink === 'software',
+             'dark:text-pink-500': activeLink === 'software',
+             'dark:hover:bg-gray-700': activeLink === 'software'
+           }" (click)="setActiveLink('software')"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 xl:hover:bg-transparent xl:hover:text-pink-700 xl:p-0 xl:dark:hover:text-pink-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white xl:dark:hover:bg-transparent dark:border-gray-700">Software</a>
+          </li>
+          <li class="xl:hidden">
+            <div class="flex flex-row items-center ">
+              <!-- Theme Toggle -->
+              <app-theme-toggle class="block w-full py-2 px-3 text-gray-900 rounded dark:text-white"></app-theme-toggle>
+              
+              <!-- Contact Us Button -->
+              <button routerLink="/contact-us" type="button"
+                class="block w-full text-white bg-pink-700 hover:bg-pink-800 focus:ring-4 focus:outline-none focus:ring-pink-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-pink-800">
+                Contact Us
+              </button>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+</div>

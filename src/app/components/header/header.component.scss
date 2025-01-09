@@ -15,5 +15,112 @@
 //   nav{
 //     border-radius: 50px;
 //   }
+nav{
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+
+}
+.nav-container{
+    position: sticky;
+    top: 8px;
+}
+/* Default styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Styles for smaller screens (less than 768px) */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    /* Hide menu items on smaller screens by default */
+    .navbar ul {
+      display: none;
+      width: 100%;
+      padding-left: 0;
+      margin-top: 20px;
+    }
+  
+    /* Show the hamburger icon */
+    .navbar button {
+      display: block;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .navbar button .humburger-icon {
+      width: 30px;
+      height: 3px;
+      background-color: black;
+      position: relative;
+    }
+  
+    .navbar button .humburger-icon::after,
+    .navbar button .humburger-icon::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: black;
+      left: 0;
+      transition: 0.3s;
+    }
+  
+    .navbar button .humburger-icon::before {
+      top: -8px;
+    }
+  
+    .navbar button .humburger-icon::after {
+      top: 8px;
+    }
+  
+    /* When the hamburger button is clicked, show the menu */
+    .navbar.active ul {
+      display: block;
+    }
+  }
+  
+  /* Media query for medium screens (greater than 768px but less than 1024px) */
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .navbar {
+      flex-direction: row;
+    }
+  
+    /* Menu items will be visible */
+    .navbar ul {
+      display: flex;
+    }
+  
+    .navbar button {
+      display: none; /* Hide hamburger menu on medium screens */
+    }
+  }
+  
+  /* For larger screens, the navbar is styled as a row */
+  @media (min-width: 1025px) {
+    .navbar {
+      flex-direction: row;
+    }
+  
+    /* Menu items will be displayed inline */
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+  
+    .navbar button {
+      display: none; /* Hide hamburger menu on larger screens */
+    }
+  }
+  
+
   
 

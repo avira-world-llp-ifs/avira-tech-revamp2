@@ -1,0 +1,22 @@
+
+  .marquee {
+    display: flex;
+    animation: marquee-flow 10s linear infinite; /* Animation for continuous scrolling */
+  }
+
+  @keyframes marquee-flow {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .image-container {
+    flex-shrink: 0;
+  }
+  .imageDimension {
+    height: 10rem;
+    width: 100%;
+  }
